@@ -1,0 +1,20 @@
+{
+    "name": "Switch CFW Web Loader",
+    "short_name": "Switch CFW Web Loader",
+    "icons": [
+        {
+            "src": "https://switchcfw.karthik99999.cf/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://switchcfw.karthik99999.cf/favicon/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "https://switchcfw.karthik99999.cf",
+    "display": "standalone"
+}
