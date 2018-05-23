@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #00c3e3;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #00c3e3;
+}
+
+.tab button.active {
+    background-color: #ff4554;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: linear-gradient(90deg, #F02D7D 50%, #19D719 50%);
+    }
+.btnActivate {
+    background-color: powderblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Windows')">Windows</button>
+  <button class="tablinks" onclick="openTab(event, 'Linux')">Linux</button>
+  <button class="tablinks" onclick="openTab(event, 'macOS/ChromeOS/Android')">macOS/ChromeOS/Android</button>
+  <button class="tablinks" onclick="openTab(event, 'FuseeGelee')">Fusée Gelée Launcher</button>
+</div>
+
+<div id="Windows" class="tabcontent">
+  <p>The Web Launcher will NOT work on Windows. Instead, I recommend you use TegraRcmSmash.</p>
+  <p>Official Instructions can be found <a href="https://github.com/rajkosto/TegraRcmSmash/blob/master/README.md">here</a>, but here is a basic setup:</p>
+  <h2>Programs Needed</h2>
+  <p>Go <a href="https://zadig.akeo.ie">here</a> and get the latest version of Zadig</p>
+  <p>Then go <a href="https://switchtools.sshnuke.net">here</a> and get the latest verison of TegraRcmSmash</p>
+  <h2>Setup</h2>
+  <p>1. Put your switch into RCM Mode</p>
+  <p>2. Connect your switch to your PC, then open Zadig.</p>
+  <p>3. Select "APX" in Zadig, then select libusbK (v3.0.7.0) as your driver type in the text box.</p>
+  <p>4. Select "Driver Install". Once it's done, check the device manager and see if "APX" is under libusbK USB tree.</p>
+  <h2>Using your payload</h2>
+  <p>After the setup, it's simple. Unzip the file you downloaded for TegraRcmSmash. Then open the x64 folder (or Win32 if you have a 32 bit OS). Then drag and drop your payload on the .exe (Make sure your switch is connected of course, which is the same method as seeing if the driver was installed) and it should work!
+</div>
+
+<div id="Linux" class="tabcontent">
+  <p>The Web Launcher will work on Linux, however, I suggest you do this first so we don't have errors later on:</p>
+  <p>Make a file at <code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
+</div>
+
+<div id="macOS/ChromeOS/Android" class="tabcontent">
+  <p>These Operating Systems will work with no modifications. Move on to the hacking!</p>
+</div>
+
+<div id="FuseeGelee" class="tabcontent">
+    <p>Now it's time to hack your Switch!</p>
+    <div>
+    <form id="mainForm">
+      <p>
+        <input type="radio" name="payload" id="fusee.bin" value="fusee.bin" checked>
+        <label for="fusee.bin">Example payload (fusee.bin)</label>
+      </p>
+
+      <p>
+        <input type="radio" name="payload" id="hekate5" value="hekate v5">
+        <label for="hekate5">Hekate 5.0.x</label>
+      </p>
+
+      <p>
+        <input type="radio" name="payload" id="hekate4" value="hekate v4">
+        <label for="hekate4">Hekate 4.0.x</label>
+      </p>
+
+      <p>
+        <input type="radio" name="payload" id="hekateinstant5" value="instaboot">
+        <label for="hekateinstant5">Hekate instant boot 5.0.x</label>
+      </p>
+
+      <p>
+        <input type="radio" name="payload" id="hekateinstant4" value="instabootv4">
+        <label for="hekateinstant4">Hekate instant boot 4.0.x</label>
+      </p>
+      <p>
+        <input type="radio" name="payload" id="uploaded" value="uploaded">
+        <label for="uploaded">Upload payload:</label>
+        <input type="file" id="payloadUpload">
+      </p>
+    </form>
+<button id="goButton"; class=btnActivate>Activate</button>
+</div>
+
+<h3>Log:</h3>
+<textarea cols="80" rows="12" id="output" color="white"></textarea>
+</div>
+
+<script src="./js/fusee.bin.js"></script>
+<script src="./js/hekate5.js"></script>
+<script src="./js/hekate4.js"></script>
+<script src="./js/hekateinsta5.js"></script>
+<script src="./js/hekateinsta4.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/tabs.js"></script>
+
+</body>
+</html>
