@@ -115,6 +115,14 @@ document.getElementById("goButton").addEventListener("click", async () => {
   let payload;
   if (payloadType === "fusee.bin") {
     payload = fusee;
+  } else if (payloadType === "hekate v5") {
+    payload = hekate5;
+  } else if (payloadType === "hekate v4") {
+    payload = hekate4;
+  } else if (payloadType === "instaboot") {
+    payload = instaboot;
+  } else if (payloadType === "instabootv4") {
+    payload = instabootv4;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
