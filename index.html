@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="https://switchcfw.karthik99999.cf/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://switchcfw.karthik99999.cf/favicon/favicon-32x32.png">
@@ -20,7 +19,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">karthik99999's F-G Launcher</a>
+    <a class="navbar-brand" href="#">Karthik99999's FG Launcher</a>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" id="defaultOpen" onclick="openTab(event, 'Welcome')" href="#">Welcome
@@ -54,6 +53,7 @@
           <a href="https://www.ktemkin.com">ktemkin</a>. Also thanks to
           <a href="https://fusee-gelee.firebaseapp.com">atlas44</a> and
           <a href="https://elijahzawesome.github.io/web-cfw-loader">ElijahZAwesome</a> for their javascript code.</p>
+        <p>Thanks to <a href="https://github.com/LanderN">LanderN</a> for the bootstrap design. If you would like to see the old design go <a href="https://switchcfw.karthik99999.cf/old.html">here</a>.
         <p>Happy Hacking!</p>
       </div>
 
@@ -154,7 +154,7 @@
   <script src="./js/CTCaer_Hekate.js"></script>
   <script src="./js/main.js"></script>
   <script>
-    function openTab(evt, cityName) {
+    function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -165,14 +165,12 @@
         console.log(tablinks[i])
         tablinks[i].classList.remove("active");
       }
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(tabName).style.display = "block";
       evt.currentTarget.classList.add("active");
       console.log(evt)
     }
-
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
   </script>
 </body>
-
 </html>
