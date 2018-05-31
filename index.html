@@ -68,6 +68,7 @@
         <a href="https://zadig.akeo.ie">here</a> and get the latest version of Zadig</p>
       <p>Then go
         <a href="https://switchtools.sshnuke.net">here</a> and get the latest verison of TegraRcmSmash</p>
+      <p>Also, just in case, get the <a href="https://go.microsoft.com/fwlink/?LinkId=746572">Visual Studio C++ 2017 64 bit redistributable</a> (you will have to restart your computer after installing this)</p>
       <h2>Setup</h2>
       <p>1. Put your switch into RCM Mode</p>
       <p>2. Connect your switch to your PC, then open Zadig.</p>
@@ -86,7 +87,7 @@
       <p>Make a file at
         <code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:
         <br>
-        <code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code>
+        <code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code>
       </p>
     </div>
 
