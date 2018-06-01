@@ -77,42 +77,41 @@ body {font-family: Arial;}
     <p>This is isn't tested that much. Be careful!</p>
     <p>Huge thanks to the <a href="https://reswitched.tech">ReSwitched</a> team and <a href="https://www.ktemkin.com">ktemkin</a>. Also thanks to <a href="https://fusee-gelee.firebaseapp.com">atlas44</a> and <a href="https://elijahzawesome.github.io/web-cfw-loader">ElijahZAwesome</a> for their javascript code.</p>
     <p>This is the old/alternate version of the site. Go <a href="https://switchcfw.karthik99999.cf">here</a> for the bootstrap design of this. (This website still functions)</p>
-    <p>Happy Hacking!</p>
+    <p>Also, thank you for using my tool.</p>
 </div>
 <div id="Windows" class="tabcontent">
-  <p>The Web Launcher will NOT work on Windows. Instead, I recommend you use TegraRcmSmash.</p>
-  <p>Official Instructions can be found <a href="https://github.com/rajkosto/TegraRcmSmash/blob/master/README.md">here</a>, but here is a basic setup:</p>
-  <h2>Programs Needed</h2>
-  <p>Go <a href="https://zadig.akeo.ie">here</a> and get the latest version of Zadig</p>
-  <p>Then go <a href="https://switchtools.sshnuke.net">here</a> and get the latest verison of TegraRcmSmash</p>
-  <h2>Setup</h2>
-  <p>1. Put your switch into RCM Mode</p>
-  <p>2. Connect your switch to your PC, then open Zadig.</p>
-  <p>3. Select "APX" in Zadig, then select libusbK (v3.0.7.0) as your driver type using the arrows in the text box to the right of the green arrow.</p>
-  <p>4. Select the big "Driver Install" button. Once it's done, check the device manager and see if "APX" is under libusbK USB tree.</p>
-  <h2>Using your payload</h2>
-  <p>After the setup, it's simple. Unzip the file you downloaded for TegraRcmSmash. Then open the x64 folder (or Win32 if you have a 32 bit OS). Then drag and drop your payload on the .exe (Make sure your switch is connected of course, which is the same method as seeing if the driver was installed) and it should work!
+  <p>The web launcher does NOT work in Windows. There is a really noob friendly tool now called SHAIO, so we'll be using that.</p>
+      <h3>How to use SHAIO</h3>
+      <p>Honestly, the program practically teaches itself, but I'll give instructions anyway.</p>
+      <p>1. Get the latest release of SHAIO <a href="https://github.com/getraid/SHAIO/releases/latest">here</a></p>
+      <p>2. Install it if you got the exe, or unzip the file if you got the portable zipped file.</p>
+      <p>3. Open SHAIO, then click "Payload Tool", and press ok on the popup (first use only).</p>
+      <p>4. Select "Install Drivers" in the bottom left corner. Allow the app to make changes (needs admin access), then complete the wizard.</p>
+      <p>5. Put your switch into RCM mode and plug it into your computer.</p>
+      <p>6. Click the text box at the top and select a paylod, or upload one with the "+" button, then click "Launch", and it should be done!</p>
 </div>
 
 <div id="Linux" class="tabcontent">
   <p>The Web Launcher will work on Linux, however, I suggest you do this first so we don't have errors later on:</p>
-  <p>Make a file at <code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:<br><code>SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0955\", MODE=\"0664\", GROUP=\"plugdev\"</code></p>
+  <p>Make a file at <code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:<br><code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code></p>
 </div>
 
 <div id="macOS/ChromeOS/Android" class="tabcontent">
-  <p>These Operating Systems will work with no modifications. Move on to the hacking!</p>
+  <p>These Operating Systems will work as is. Move on to the hacking!</p>
 </div>
 
 <div id="FuseeGelee" class="tabcontent">
     <h3>Now it's time to hack your Switch!</h3>
-    <h4>NOTE: Again, this does NOT work in Windows. Go to the "Windows" tab above for intructions.</h4>
-    <h5>Also, I'm not responsible for anything that happens to your switch when you use this tool!</h5>
-    <h3>Steps:</h3>
-    <p>1. Put your switch in RCM mode</p>
-    <p>2. Connect your switch to your computer</p>
-    <p>3. Select your payload or upload one</p>
-    <p>4. Click "Activate"</p>
-    <p>5. Select "APX" in the prompt, then "Connect", and the payload should've been sent!</p>
+      <h4>NOTE: Again, this does NOT work in Windows. Go to the "Windows" tab above for intructions.</h4>
+      <h5>Also, I'm not responsible for anything that happens to your switch when you use this tool!</h5>
+      <h3>Steps:</h3>
+      <p>You must use <a href="https://www.google.com/chrome/">Chrome</a> for this to work!</p>
+      <p>Also make sure Chrome isn't sandboxed (one user had an issue with this).</p>
+      <p>1. Put your switch in RCM mode</p>
+      <p>2. Connect your switch to your computer</p>
+      <p>3. Select your payload or upload one</p>
+      <p>4. Click "Activate"</p>
+      <p>5. Select "APX" in the prompt, then "Connect", and the payload should've been sent!</p>
     <div>
     <form id="mainForm">
       <p>
