@@ -68,6 +68,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openTab(event, 'Linux')">Linux</button>
   <button class="tablinks" onclick="openTab(event, 'macOS/ChromeOS/Android')">macOS/ChromeOS/Android</button>
   <button class="tablinks" onclick="openTab(event, 'FuseeGelee')">Fusée Gelée Launcher</button>
+  <button class="tablinks" onclick="openTab(event, 'Homebrew')">Homebrew</button>
 </div>
 
 <div id="Welcome" class="tabcontent">
@@ -154,7 +155,10 @@ body {font-family: Arial;}
 <h3>Log:</h3>
 <textarea cols="80" rows="12" id="output" color="white"></textarea>
 </div>
-
+ <div id="Homebrew" class="tabcontent">
+   <p>An iframe of the <a href="https://switchbru.com/appstore/#/">switchbru appstore</a>.</p>
+   <iframe height="720px" width="100%" src="https://switchbru.com/appstore" name="iframe_a"></iframe>
+</div>
 <script src="./js/fusee.bin.js"></script>
 <script src="./js/hekate5.js"></script>
 <script src="./js/hekate4.js"></script>
