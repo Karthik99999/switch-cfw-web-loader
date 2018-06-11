@@ -1,151 +1,145 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="https://switchcfw.karthik99999.cf/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://switchcfw.karthik99999.cf/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://switchcfw.karthik99999.cf/favicon/favicon-16x16.png">
-  <link rel="manifest" href="https://switchcfw.karthik99999.cf/favicon/site.webmanifest">
-  <link rel="mask-icon" href="https://switchcfw.karthik99999.cf/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="https://switchcfw.karthik99999.cf/favicon/favicon.ico">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="https://switchcfw.karthik99999.cf/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="Dm8Ye5ulApS7WNlrmnLoT18C-1DI74zuRYR4MAn2A-I" />
-  <meta name="description" content="Karthik99999's Fusee Gelee Web Launcher. The easiest way to hack your Nintendo Switch.">
-  <meta name="keywords" content="fusee gelee, fusee gelee web launcher, nintendo switch, switch cfw, atmosphere switch, atmosphere, switch homebrew, switch">
-  <title>Fusee Gelee CFW Web Loader</title>
+<link rel="apple-touch-icon" sizes="180x180" href="https://switchcfw.karthik99999.cf/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://switchcfw.karthik99999.cf/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://switchcfw.karthik99999.cf/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://switchcfw.karthik99999.cf/favicon/site.webmanifest">
+<link rel="mask-icon" href="https://switchcfw.karthik99999.cf/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://switchcfw.karthik99999.cf/favicon/favicon.ico">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://switchcfw.karthik99999.cf/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Dm8Ye5ulApS7WNlrmnLoT18C-1DI74zuRYR4MAn2A-I" />
+<meta name="description" content="Karthik99999's Fusee Gelee Web Launcher. The easiest way to hack your Nintendo Switch.">
+<meta name="keywords" content="fusee gelee, fusee gelee web launcher, nintendo switch, switch cfw, atmosphere switch, atmosphere, switch homebrew, switch">
+<title>Fusee Gelee CFW Web Loader</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Karthik99999's FG Launcher</a>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" id="defaultOpen" onclick="openTab(event, 'Welcome')" href="#">Welcome
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="openTab(event, 'Windows')" href="#">Windows</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="openTab(event, 'Linux')" href="#">Linux</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="openTab(event, 'macOS/ChromeOS/Android')" href="#">macOS/ChromeOS/Android</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="openTab(event, 'FuseeGelee')" href="#">Fusée Gelée Launcher</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="openTab(event, 'Homebrew')" href="#">Homebrew</a>
-      </li>
-  </nav>
-  <div class="mt-3 container">
-    <div id="Welcome" class="tabcontent">
-      <div class="jumbotron">
-        <h2 class="display-5">Welcome to my version of the Fusee Gelee Web Launcher!</h2>
-        <p>Here, you can find instructions for your OS to hack your switch.</p>
-        <p>The source code for this site can be found
-          <a href="https://github.com/Karthik99999/switch-cfw-web-loader">here</a>
-        </p>
-        <p>This is isn't tested that much. Be careful!</p>
-        <p>Huge thanks to the
-          <a href="https://reswitched.tech">ReSwitched</a> team and
-          <a href="https://www.ktemkin.com">ktemkin</a>. Also thanks to
-          <a href="https://fusee-gelee.firebaseapp.com">atlas44</a> and
-          <a href="https://elijahzawesome.github.io/web-cfw-loader">ElijahZAwesome</a> for their javascript code.</p>
-        <p>Thanks to <a href="https://github.com/LanderN">LanderN</a> for the bootstrap design. If you would like to see the old design go <a href="https://switchcfw.karthik99999.cf/old.html">here</a>.
-        <p>Also, thank you for using my tool.</p>
-      </div>
-
-    </div>
-    <div id="Windows" class="tabcontent">
-      <p>The web launcher does NOT work in Windows. There is a really noob friendly tool now called SHAIO, so we'll be using that.</p>
-      <h3>How to use SHAIO</h3>
-      <p>Honestly, the program practically teaches itself, but I'll give instructions anyway.</p>
-      <p>1. Get the latest release of SHAIO <a href="https://github.com/getraid/SHAIO/releases/latest">here</a></p>
-      <p>2. Install it if you got the exe, or unzip the file if you got the portable zipped file.</p>
-      <p>3. Open SHAIO, then click "Payload Tool", and press ok on the popup (first use only).</p>
-      <p>4. Select "Install Drivers" in the bottom left corner. Allow the app to make changes (needs admin access), then complete the wizard.</p>
-      <p>5. Put your switch into RCM mode and plug it into your computer.</p>
-      <p>6. Click the text box at the top and select a paylod, or upload one with the "+" button, then click "Launch", and it should be done!</p>
-    </div>
-
-    <div id="Linux" class="tabcontent">
-      <p>The Web Launcher will work on Linux, however, I suggest you do this first so we don't have errors later on:</p>
-      <p>Make a file at
-        <code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:
-        <br>
-        <code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code>
-      </p>
-    </div>
-
-    <div id="macOS/ChromeOS/Android" class="tabcontent">
-      <p>These Operating Systems will work as is. Move on to the hacking!</p>
-    </div>
-
-    <div id="FuseeGelee" class="tabcontent">
-      <h3>Now it's time to hack your Switch!</h3>
-      <h4>NOTE: Again, this does NOT work in Windows. Go to the "Windows" tab above for intructions.</h4>
-      <h5>Also, I'm not responsible for anything that happens to your switch when you use this tool!</h5>
-      <h3>Steps:</h3>
-      <p>You must use <a href="https://www.google.com/chrome/">Chrome</a> for this to work!</p>
-      <p>Also make sure Chrome isn't sandboxed (one user had an issue with this).</p>
-      <p>1. Put your switch in RCM mode</p>
-      <p>2. Connect your switch to your computer</p>
-      <p>3. Select your payload or upload one</p>
-      <p>4. Click "Activate"</p>
-      <p>5. Select "APX" in the prompt, then "Connect", and the payload should've been sent!</p>
-      <div>
-        <form id="mainForm">
-          <p>
-            <input type="radio" name="payload" id="fusee.bin" value="fusee.bin" checked>
-            <label for="fusee.bin">Example payload (fusee.bin)</label>
-          </p>
-
-          <p>
-            <input type="radio" name="payload" id="labelhekate" value="hekate">
-            <label for="labelhekate">Hekate (All Firmwares)</label>
-          </p>
-
-          <p>
-            <input type="radio" name="payload" id="labelinsta" value="instaboot">
-            <label for="labelinsta">Hekate instant boot 5.0.x</label>
-          </p>
-
-          <p>
-            <input type="radio" name="payload" id="labelinstav4" value="instabootv4">
-            <label for="labelinstav4">Hekate instant boot 4.0.x</label>
-          </p>
-          <p>
-            <input type="radio" name="payload" id="labelCTCaer" value="CTCaer">
-            <label for="labelCTCaer">CTCaer's Hekate Mod v2.3 (All firmwares)</label>
-          </p>
-          <p>
-            <input type="radio" name="payload" id="uploaded" value="uploaded">
-            <label for="uploaded">Upload payload:</label>
-            <input type="file" accept=".bin" id="payloadUpload">
-          </p>
-        </form>
-        <button id="goButton" ; class="btn btn-lg btn-primary">Activate</button>
-      </div>
-
-      <h3>Log:</h3>
-      <textarea cols="80" rows="12" id="output" color="white"></textarea>
-    </div>
-  <div id="Homebrew" class="tabcontent">
-    <p>An iframe of the <a href="https://switchbru.com/appstore/#/">switchbru appstore</a>.</p>
-    <iframe height="720px" width="100%" src="https://switchbru.com/appstore" name="iframe_a"></iframe>
-  </div>
-  <script src="./js/fusee.bin.js"></script>
-  <script src="./js/hekate.js"></script>
-  <script src="./js/hekateinsta5.js"></script>
-  <script src="./js/hekateinsta4.js"></script>
-  <script src="./js/CTCaer_Hekate.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Karthik99999's FG Launcher</a>
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" id="defaultOpen" onclick="openTab(event, 'Welcome')" href="#">Welcome
+<span class="sr-only">(current)</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" onclick="openTab(event, 'Windows')" href="#">Windows</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" onclick="openTab(event, 'Linux')" href="#">Linux</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" onclick="openTab(event, 'macOS/ChromeOS/Android')" href="#">macOS/ChromeOS/Android</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" onclick="openTab(event, 'FuseeGelee')" href="#">Fusée Gelée Launcher</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" onclick="openTab(event, 'Homebrew')" href="#">Homebrew</a>
+</li>
+</nav>
+<div class="mt-3 container">
+<div id="Welcome" class="tabcontent">
+<div class="jumbotron">
+<h2 class="display-5">Welcome to my version of the Fusee Gelee Web Launcher!</h2>
+<p>Here, you can find instructions for your OS to hack your switch.</p>
+<p>The source code for this site can be found
+<a href="https://github.com/Karthik99999/switch-cfw-web-loader">here</a>
+</p>
+<p>This is isn't tested that much. Be careful!</p>
+<p>Huge thanks to the
+<a href="https://reswitched.tech">ReSwitched</a> team and
+<a href="https://www.ktemkin.com">ktemkin</a>. Also thanks to
+<a href="https://fusee-gelee.firebaseapp.com">atlas44</a> and
+<a href="https://elijahzawesome.github.io/web-cfw-loader">ElijahZAwesome</a> for their javascript code.</p>
+<p>Thanks to <a href="https://github.com/LanderN">LanderN</a> for the bootstrap design. If you would like to see the old design go <a href="https://switchcfw.karthik99999.cf/old.html">here</a>.
+<p>Also, thank you for using my tool.</p>
+</div>
+</div>
+<div id="Windows" class="tabcontent">
+<p>The web launcher does NOT work in Windows. There is a really noob friendly tool now called SHAIO, so we'll be using that.</p>
+<h3>How to use SHAIO</h3>
+<p>Honestly, the program practically teaches itself, but I'll give instructions anyway.</p>
+<p>1. Get the latest release of SHAIO <a href="https://github.com/getraid/SHAIO/releases/latest">here</a></p>
+<p>2. Install it if you got the exe, or unzip the file if you got the portable zipped file.</p>
+<p>3. Open SHAIO, then click "Payload Tool", and press ok on the popup (first use only).</p>
+<p>4. Select "Install Drivers" in the bottom left corner. Allow the app to make changes (needs admin access), then complete the wizard.</p>
+<p>5. Put your switch into RCM mode and plug it into your computer.</p>
+<p>6. Click the text box at the top and select a paylod, or upload one with the "+" button, then click "Launch", and it should be done!</p>
+</div>
+<div id="Linux" class="tabcontent">
+<p>The Web Launcher will work on Linux, however, I suggest you do this first so we don't have errors later on:</p>
+<p>Make a file at
+<code>/etc/udev/rules.d/50-switch.rules</code> With the following contents:
+<br>
+<code>SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"</code>
+</p>
+</div>
+<div id="macOS/ChromeOS/Android" class="tabcontent">
+<p>These Operating Systems will work as is. Move on to the hacking!</p>
+</div>
+<div id="FuseeGelee" class="tabcontent">
+<h3>Now it's time to hack your Switch!</h3>
+<h4>NOTE: Again, this does NOT work in Windows. Go to the "Windows" tab above for intructions.</h4>
+<h5>Also, I'm not responsible for anything that happens to your switch when you use this tool!</h5>
+<h3>Steps:</h3>
+<p>You must use <a href="https://www.google.com/chrome/">Chrome</a> for this to work!</p>
+<p>Also make sure Chrome isn't sandboxed (one user had an issue with this).</p>
+<p>1. Put your switch in RCM mode</p>
+<p>2. Connect your switch to your computer</p>
+<p>3. Select your payload or upload one</p>
+<p>4. Click "Activate"</p>
+<p>5. Select "APX" in the prompt, then "Connect", and the payload should've been sent!</p>
+<div>
+<form id="mainForm">
+<p>
+<input type="radio" name="payload" id="fusee.bin" value="fusee.bin" checked>
+<label for="fusee.bin">Example payload (fusee.bin)</label>
+</p>
+<p>
+<input type="radio" name="payload" id="labelhekate" value="hekate">
+<label for="labelhekate">Hekate (All Firmwares)</label>
+</p>
+<p>
+<input type="radio" name="payload" id="labelinsta" value="instaboot">
+<label for="labelinsta">Hekate instant boot 5.0.x</label>
+</p>
+<p>
+<input type="radio" name="payload" id="labelinstav4" value="instabootv4">
+<label for="labelinstav4">Hekate instant boot 4.0.x</label>
+</p>
+<p>
+<input type="radio" name="payload" id="labelCTCaer" value="CTCaer">
+<label for="labelCTCaer">CTCaer's Hekate Mod v2.3 (All firmwares)</label>
+</p>
+<p>
+<input type="radio" name="payload" id="uploaded" value="uploaded">
+<label for="uploaded">Upload payload:</label>
+<input type="file" accept=".bin" id="payloadUpload">
+</p>
+</form>
+<button id="goButton" ; class="btn btn-lg btn-primary">Activate</button>
+</div>
+<p></p>
+<h3>Log: <button class="btn btn-lg btn-primary"; onclick="copyLog()">Copy Log</button></h3>
+<textarea cols="80" rows="12" id="output" color="white"></textarea><br/>
+</div>
+<div id="Homebrew" class="tabcontent">
+<p>An iframe of the <a href="https://switchbru.com/appstore/#/">switchbru appstore</a>.</p>
+<iframe height="720px" width="100%" src="https://switchbru.com/appstore" name="iframe_a"></iframe>
+</div>
+<script src="./js/fusee.bin.js"></script>
+<script src="./js/hekate.js"></script>
+<script src="./js/hekateinsta5.js"></script>
+<script src="./js/hekateinsta4.js"></script>
+<script src="./js/CTCaer_Hekate.js"></script>
+<script src="./js/main.js"></script>
+<script>
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -160,9 +154,13 @@
       document.getElementById(tabName).style.display = "block";
       evt.currentTarget.classList.add("active");
       console.log(evt)
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+      }
+      document.getElementById("defaultOpen").click();
+      function copyLog() {
+      var copyText = document.getElementById("output");
+      copyText.select();
+      document.execCommand("copy");
+      }
   </script>
 </body>
 </html>

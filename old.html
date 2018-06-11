@@ -50,10 +50,20 @@ body {font-family: Arial;}
     background: linear-gradient(90deg, #F02D7D 50%, #19D719 50%);
     }
 .btnActivate {
-    background-color: powderblue;
+    background-color: dodgerblue;
     border: none;
     color: white;
     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btnLog {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 12px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -147,7 +157,7 @@ body {font-family: Arial;}
 <button id="goButton"; class=btnActivate>Activate</button>
 </div>
 
-<h3>Log:</h3>
+<h3>Log: <button onclick=copyLog(); class=btnActivate>Copy Log</button></h3>
 <textarea cols="80" rows="12" id="output" color="white"></textarea>
 </div>
  <div id="Homebrew" class="tabcontent">
@@ -161,7 +171,7 @@ body {font-family: Arial;}
 <script src="./js/CTCaer_Hekate.js"></script> 
 <script src="./js/main.js"></script>
 <script>
-    function openTab(evt, cityName) {
+    function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -171,12 +181,15 @@ body {font-family: Arial;}
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-    </script>
+    }
+    document.getElementById("defaultOpen").click();
+    function copyLog() {
+    var copyText = document.getElementById("output");
+    copyText.select();
+    document.execCommand("copy");
+    }
+</script>
 </body>
 </html>
