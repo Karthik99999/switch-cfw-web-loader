@@ -123,6 +123,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
     payload = instabootv4;
   } else if (payloadType === "CTCaer") {
     payload = CTCaer;
+  } else if (payloadType === "SXOS") {
+    payload = SXOS;
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
