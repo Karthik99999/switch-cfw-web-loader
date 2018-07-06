@@ -115,12 +115,6 @@ document.getElementById("goButton").addEventListener("click", async () => {
   let payload;
   if (payloadType === "fusee.bin") {
     payload = fusee;
-  } else if (payloadType === "hekate") {
-    payload = hekate;
-  } else if (payloadType === "instaboot") {
-    payload = instaboot;
-  } else if (payloadType === "instabootv4") {
-    payload = instabootv4;
   } else if (payloadType === "CTCaer") {
     payload = CTCaer;
   } else if (payloadType === "SXOS") {
@@ -128,7 +122,7 @@ document.getElementById("goButton").addEventListener("click", async () => {
   } else if (payloadType === "uploaded") {
     const file = document.getElementById("payloadUpload").files[0];
     if (!file) {
-      alert("You need to upload a file, to use an uploaded file.");
+      logOutput('You did not upload a file! Press the "upload" button to do so.')
       return;
     }
     payload = new Uint8Array(await readFileAsArrayBuffer(file));
