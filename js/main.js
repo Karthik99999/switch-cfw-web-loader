@@ -117,6 +117,8 @@ document.getElementById("goButton").addEventListener("click", async () => {
     payload = fusee;
   } else if (payloadType === "CTCaer") {
     payload = CTCaer;
+  } else if (payloadType === "ReiNX") {
+    payload = ReiNX;
   } else if (payloadType === "SXOS") {
     payload = SXOS;
   } else if (payloadType === "uploaded") {
