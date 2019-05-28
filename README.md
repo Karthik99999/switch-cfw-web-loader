@@ -1,3 +1,3 @@
-# switch-cfw-web-loader
-Yeah, another Fusee-Gelee web launcher. There are new things I've added though, so check it out if you want.
-All credits can be found on the "Welcome" tab of the [website](https://switchcfw.karthik99999.cf).
+# Archived
+
+Due to https://webcfw.sdsetup.com existing, this is no longer a useful project, and has been archived for historical reasons.
